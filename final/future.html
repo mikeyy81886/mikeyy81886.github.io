@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>My Travel Site</title>
+    <style>
+        /* Define the color palette */
+        :root {
+            --color-1: #F79256; /* Orange */
+            --color-2: #FBD1A2; /* Light peach */
+            --color-3: #7DCFB6; /* Teal */
+            --color-4: #00B2CA; /* Cyan */
+            --color-5: #1D4E89; /* Dark blue */
+        }
+
+        /* Global reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Main layout */
+        html, body {
+            height: 100%; /* Ensure the body takes the full height of the viewport */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body background and text color */
+        body {
+            background-color: var(--color-2); /* Light peachy color */
+            color: var(--color-5); /* Dark blue text */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Ensure space between header/content and footer */
+        }
+
+        /* Header */
+        header {
+            background-color: var(--color-1); /* Orange background */
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: var(--color-5); /* Dark blue for main heading */
+        }
+
+        header h2, header h3 {
+            color: var(--color-4); /* Cyan for subheadings */
+        }
+
+        header h4 p {
+            color: var(--color-3); /* Light teal color for paragraph */
+        }
+
+        /* Style for the links */
+        a {
+            color: var(--color-4); /* Cyan for links */
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--color-1); /* Orange when hovered */
+        }
+
+        /* Style for the unordered list */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        ul li {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: var(--color-5); /* Dark blue for list items */
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--color-1); /* Orange footer */
+            text-align: center;
+            padding: 10px;
+            color: white;
+            margin-top: auto; /* Push footer to the bottom of the page */
+        }
+
+        /* Responsive image */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Travel Page</h1>
+        <h2>
+            <a href="index.html">Home</a>
+        </h2>
+    
+    </header>
+
+
+<main>
+    <p>Where I'm going next</p>
+</main>
+
+
+    <footer>
+        <p>&copy; 2024 My Travel Site</p>
+        <ul>
+            <li><strong>myoungma@highpoint.edu</strong></li>
+            <li><strong>973-713-6524</strong></li>
+            <a href="contact.html">Contact Me</a>
+        </ul>
+    </footer>
+</body>
