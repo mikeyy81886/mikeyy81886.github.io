@@ -63,10 +63,7 @@
             color: var(--color-4); /* Cyan for links */
             text-decoration: none;
         }
-
-        a:hover {
-            color: var(--color-1); /* Orange when hovered */
-        }
+        
 
         /* Style for the unordered list */
         ul {
@@ -98,22 +95,32 @@
             margin: 0 auto;
         }
     </style>
+    <style>.image-container {
+        display: flex;              /* Use flexbox to align items in a row */
+        justify-content: center;    /* Optionally center the images horizontally */
+        gap: 20px;                  /* Add some space between images */
+    }</style>
+
 </head>
 <body>
     <header>
         <h1>My Travel Page</h1>
         <h2>
-            <a href="places.html">Places I have Been</a>
-        </h2>
-        <h3>
+            <a href="index.html">Home  -</a>
+            <a href="places.html">Where I have been  -</a>
             <a href="future.html">Travel Bucket List</a>
-        </h3>
+        </h2>
     
     </header>
 
-
-<main>I have had the opportunity to travel a lot in my lifetime already. It is one of my favorite things to do, and I am lucky to have seen such cool places.
-</main>
+    <main>
+        <div class="image-container">
+            <img src="Jamaica.jpg" width="333" height="333" alt="Jamaica">
+            <img src="Italy.jpg" width="333" height="333" alt="Italy">
+            <img src="CostaRica.jpg" width="333" height="333" alt="Costa Rica">
+            <img src="France.jpg" width="333" height="333" alt="France">
+        </div>
+    </main>
 
 
     <footer>
