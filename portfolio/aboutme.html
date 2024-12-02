@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>Mikey Youngman</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #F1FAEE;
+            color: #1D3557;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        header {
+            background-color: #A8DADC;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #E63946;
+        }
+        h2 a {
+            color: #457B9D;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        h2 a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #A8DADC;
+            margin-top: auto;
+        }
+        .no-colors {
+            background-color: white;
+            color: black;
+        }
+        .no-colors header {
+            background-color: white;
+        }
+        .no-colors h2 a {
+            color: black;
+        }
+        .no-colors footer {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mikey Youngman</h1>
+        <h2>
+            <a href="Hero.html">Home</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="projects.html">Projects Section</a>
+        </h2>
+        <h3>My Portfolio</h3>
+    </header>
+    
+   <p> Hello, my name is Mikey Youngman, and I am a senior at High Point University. I am from Boonton Township, New Jersey. I am studying sports management and am looking forward to my future once I graduate in May.
+    My passion for sports started at a very young age. I grew up playing many sports, including hockey, baseball, soccer, tennis, wrestling, and lacrosse. However, one always stood out to me.
+    Hockey. My love for hockey started around the age of 9. My father always had on the New York Rangers's games, but it took me a while to gain an interest. Once it did click, hockey was my life.
+    I was all I watched and talked about. Soon after, I asked my parents if I could play. I spent the next few months learning how to skate and started playing at 10 years old. I had dreams of playing
+    professional hockey and would have done anything to make it happen. Unfortunately, by my junior year of high school, I had already suffered seven concussions. At this time I realized I had to stop playing and focus.
+    on my future. I then shifted my focus to the business side of sports. When applying to colleges, I looked into being a sports management major and what schools had the best programs. Seeing the connections I would have
+    Here at HPU, it made my decision easy. Since being here, my knowledge of the sports industry has grown exponentially. In my freshman year, I started by taking an Intro to Sport Management as well as joining the Sport Management Association.
+    By doing this, I was able to get my first internship as a second-semester freshman. I interned with the High Point Rockers, a local Atlantic League baseball team. I worked in fan experience but got an inside view of how a minor league
+    baseball organization is run. Over the next few years, I took classes such as Sports Marketing, Sports Finance, Sport in Society, Organizational Behavior, and Strategic Management. By taking these classes, I was able to learn information and prepare
+    to work in the industry. This past summer I was able to land a job working for the MLB Network. I recorded statistics, logged games, and controlled commercial breaks for MLB TV. I recently got a return offer for when I graduate in the spring.
+    My journey in this industry started a long time ago and has a long time left. My experiences here at High Point University have helped get me where I am today. I am excited to continue my career and cannot wait for what is next.
+    Although my childhood dream was to play professionally, working in sports would be amazing. I still hope to one day work in hockey. I would love to work in the front office of an NHL team, and it would become a full-circle moment, 
+    if I could one day work for the New York Rangers. The team I grew up watching. The team that made me fall in love with sports. I am confident that I will make it happen one day and will do anything it takes to get it done.
+
+
+   </p>
+
+    <footer>
+        <p>&copy; 2024 Mikey Youngman</p>
+        <p>myoungma@highpoint.edu</p>
+        <p>973-713-6524</p>
+        <button type="button" onclick="toggleColors()">Toggle Color Palette</button>
+        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and Time.</button>
+        
+        <p id="demo"></p>
+    </footer>
+
+    <script>
+        function toggleColors() {
+            document.body.classList.toggle('no-colors');
+        }
+    </script>
+</body>
+</html>
