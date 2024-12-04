@@ -1,102 +1,171 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-    <title>Mikey Youngman</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            background-color: #F1FAEE;
-            color: #1D3557;
-            font-family: Arial, sans-serif;
-            transition: background-color 0.3s, color 0.3s;
-            margin: 0; 
-        }
-        header {
-            background-color: #A8DADC;
-            padding: 15px 20px;  
-            text-align: center;
-        }
-        h1 {
-            color: #E63946;
-        }
-        h2 a {
-            color: #457B9D;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        h2 a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            text-align: center;
-            padding: 10px 20px; 
-            background-color: #A8DADC;
-            margin-top: auto;
-        }
-        .no-colors {
-            background-color: white;
-            color: black;
-        }
-        .no-colors header {
-            background-color: white;
-        }
-        .no-colors h2 a {
-            color: black;
-        }
-        .no-colors footer {
-            background-color: white;
-        }
- 
-        .image-container {
-            display: flex;
-            justify-content: center; 
-            align-items: center;     
-            height: 50vh;            
-        }
-        .image-container img {
-            max-width: 100%; 
-            height: auto;    
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Mikey Youngman</h1>
-        <h2>
-            <a href="hero.html">Home</a>
-            <a href="aboutme.html">About Me</a>
-            <a href="projects.html">Projects Section</a>
-        </h2>
-        <h3>My Portfolio</h3>
-    </header>
-    
-    <main>
-        <div class="image-container">
-            <img src="Me.jpg" width="333" height="333" alt="Me">
-        </div>
-    </main>
-
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Your Name - Home</title>  
+  <style>  
+    /* Global Styles */  
+    * {  
+      box-sizing: border-box;  
+      margin: 0;  
+      padding: 0;  
+    }  
+  
+    body {  
+      font-family: Arial, sans-serif;  
+      line-height: 1.6;  
+      color: #333;  
+      background-color: #f9f9f9;  
+    }  
+  
+    header {  
+      background-color: #3498db;  
+      color: #fff;  
+      padding: 1em;  
+      text-align: center;  
+    }  
+  
+    nav ul {  
+      list-style: none;  
+      margin: 0;  
+      padding: 0;  
+      display: flex;  
+      justify-content: space-between;  
+    }  
+  
+    nav li {  
+      margin-right: 20px;  
+    }  
+  
+    nav a {  
+      color: #fff;  
+      text-decoration: none;  
+    }  
+  
+    main {  
+      display: flex;  
+      flex-direction: column;  
+      align-items: center;  
+      padding: 2em;  
+    }  
+  
+    section {  
+      background-color: #fff;  
+      padding: 2em;  
+      margin-bottom: 20px;  
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    }  
+  
+    h1 {  
+      font-size: 24px;  
+      margin-bottom: 10px;  
+      color: #3498db;  
+    }  
+  
+    h2 {  
+      font-size: 18px;  
+      margin-bottom: 10px;  
+      color: #f1c40f;  
+    }  
+  
+    p {  
+      margin-bottom: 20px;  
+    }  
+  
+    img {  
+      width: 400%;  
+      height: 400px;  
+      object-fit: cover;  
+      border-radius: 10px;  
+    }  
+  
+    button {  
+      background-color: #3498db;  
+      color: #fff;  
+      border: none;  
+      padding: 10px 20px;  
+      font-size: 16px;  
+      cursor: pointer;  
+    }  
+  
+    button:hover {  
+      background-color: #2ecc71;  
+    }  
+  
+    /* New Styles */  
+    .title {  
+      font-size: 48px;  
+      color: #fff;  
+      text-align: center;  
+      margin-bottom: 20px;  
+    }  
+  
+    .picture {  
+      width: 100%;  
+      height: 400px;  
+      object-fit: cover;  
+      border-radius: 10px;  
+      margin-bottom: 20px;  
+    }  
+  
+    .picture-section {  
+      display: flex;  
+      justify-content: center;  
+      margin-bottom: 20px;  
+    }  
+  
+    .hero-content {  
+      text-align: center;  
+      padding: 20px;  
+      background-color: #fff;  
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    }  
+  
+    .hero-content p {  
+      font-size: 18px;  
+      margin-bottom: 20px;  
+    }  
+  
+    .hero-content button {  
+      margin-top: 20px;  
+    }  
+  
+    /* Footer Styles */  
+    footer {  
+      background-color: #3498db;  
+      color: #fff;  
+      padding: 1em;  
+      text-align: center;  
+    }  
+  </style>  
+</head>  
+<body>  
+  <header>  
+    <h1 class="title">Welcome to My Website!</h1>  
+    <nav>  
+      <ul>  
+        <li><a href="Hero.html">Home</a></li>  
+        <li><a href="aboutme.html">About</a></li>  
+        <li><a href="projects.html">Projects</a></li>  
+      </ul>  
+    </nav>  
+  </header>  
+  <main>  
+    <section class="picture-section">  
+      <img class="picture" src="Me.jpg" alt="Picture">  
+    </section>  
+    <section class="hero-content">  
+      <p>Hi, I am Mikey Youngman a senior Sport Managment Major at High Point University</p>  
+    </section>  
+  </main>    
     <footer>
-        <p>&copy; 2024 Mikey Youngman</p>
-        <p>myoungma@highpoint.edu</p>
-        <p>973-713-6524</p>
-        <button type="button" onclick="toggleColors()">Toggle Color Palette</button>
-        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and Time.</button>
-        
-        <p id="demo"></p>
-    </footer>
-
-    <script>
-        function toggleColors() {
-            document.body.classList.toggle('no-colors');
-        }
-    </script>
-</body>
+      <p>&copy; 2024 Mikey Youngman</p>
+      <p>myoungma@highpoint.edu</p>
+      <p>973-713-6524</p>
+      <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and Time.</button>
+      
+      <p id="demo"></p>
+  </footer>
+</body>  
 </html>
