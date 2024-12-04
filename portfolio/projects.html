@@ -1,103 +1,173 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-    <title>Mikey Youngman</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            background-color: #F1FAEE;
-            color: #1D3557;
-            font-family: Arial, sans-serif;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        header {
-            background-color: #A8DADC;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            color: #E63946;
-        }
-        h2 a {
-            color: #457B9D;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        h2 a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #A8DADC;
-            margin-top: auto;
-        }
-        .no-colors {
-            background-color: white;
-            color: black;
-        }
-        .no-colors header {
-            background-color: white;
-        }
-        .no-colors h2 a {
-            color: black;
-        }
-        .no-colors footer {
-            background-color: white;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Mikey Youngman</h1>
-        <h2>
-            <a href="hero.html">Home</a>
-            <a href="aboutme.html">About Me</a>
-            <a href="projects.html">Projects Section</a>
-        </h2>
-        <h3>My Portfolio</h3>
-        <h4>My Projects</h4>
-    </header>
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Your Name - About</title>  
+  <style>  
+    /* Global Styles */  
+    * {  
+      box-sizing: border-box;  
+      margin: 0;  
+      padding: 0;  
+    }  
+  
+    body {  
+      font-family: Arial, sans-serif;  
+      line-height: 1.6;  
+      color: #333;  
+      background-color: #f9f9f9;  
+    }  
+  
+    header {  
+      background-color: #3498db;  
+      color: #fff;  
+      padding: 1em;  
+      text-align: center;  
+    }  
+  
+    nav ul {  
+      list-style: none;  
+      margin: 0;  
+      padding: 0;  
+      display: flex;  
+      justify-content: space-between;  
+    }  
+  
+    nav li {  
+      margin-right: 20px;  
+    }  
+  
+    nav a {  
+      color: #fff;  
+      text-decoration: none;  
+    }  
+  
+    main {  
+      display: flex;  
+      flex-direction: column;  
+      align-items: center;  
+      padding: 2em;  
+    }  
+  
+    section {  
+      background-color: #fff;  
+      padding: 2em;  
+      margin-bottom: 20px;  
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    }  
+  
+    h1 {  
+      font-size: 24px;  
+      margin-bottom: 10px;  
+      color: #3498db;  
+    }  
+  
+    h2 {  
+      font-size: 18px;  
+      margin-bottom: 10px;  
+      color: #f1c40f;  
+    }  
+  
+    p {  
+      margin-bottom: 20px;  
+    }  
+  
+    img {  
+      width: 100%;  
+      height: 200px;  
+      object-fit: cover;  
+      border-radius: 10px;  
+    }  
+  
+    button {  
+      background-color: #3498db;  
+      color: #fff;  
+      border: none;  
+      padding: 10px 20px;  
+      font-size: 16px;  
+      cursor: pointer;  
+    }  
+  
+    button:hover {  
+      background-color: #2ecc71;  
+    }  
+  
+    /* About Page Styles */  
+    .about {  
+      display: flex;  
+      flex-direction: column;  
+      align-items: center;  
+    }  
+  
+    .about img {  
+      width: 200px;  
+      height: 200px;  
+      border-radius: 50%;  
+      margin-bottom: 20px;  
+    }  
+  
+    /* Image Gallery Styles */  
+    .image-gallery {  
+      display: flex;  
+      justify-content: space-between;  
+      margin-bottom: 20px;  
+    }  
+  
+    .image-gallery img {  
+      width: calc(33.33% - 20px);  
+      height: 200px;  
+      object-fit: cover;  
+      border-radius: 10px;  
+      margin: 10px;  
+    }  
+  
+    /* Footer Styles */  
+    footer {  
+      background-color: #3498db;  
+      color: #fff;  
+      padding: 1em;  
+      text-align: center;  
+    }  
+  </style>  
+</head>  
+<body>  
+  <header>  
+    <nav>  
+      <ul>  
+        <li><a href="hero.html">Home</a></li>  
+        <li><a href="aboutme.html">About</a></li>  
+        <li><a href="projects.html">Projects</a></li>   
+      </ul>  
+    </nav>  
+  </header>  
+  <main>
+    <h1>My Projects</h1>
+    <section>
+      <h2><a href="NIL+case+study.pdf">1. NIL Case Study for Strategic Management of Sport Organizations</a></h2>
+      <p> For this case study, I discussed what NIL (Name, Image, and Likeness) is, and how to improve it. I looked at three main issues: Restrictions and Regulations, Equity, and Competitive Imbalance. Next, I came up with solutions to these issues. I had to research what exactly has gone wrong, and come up with realistic ways the NCAA may resolve these problems. While I do not intend on working in college athletics, this project was worthwhile because it helped me understand important issues in the industry. NIL will also have a huge impact on professional sports, as more and more athletes will stay in school longer due to the money they can make through NIL.</p>
+    </section>
+    <section>
+      <h2><a href="Case Study 1 - Miami Marlins.pdf">2. Miami Marlins Case Study for Organizational Behavior of Sport Organizations</a></h2>
+      <p>This was a very interesting project I worked on last year. Along with three classmates, we broke down what has gone wrong with the Miami Marlins’ management, and why this might be. In 2020, they hired the first female General Manager in the big four American sports leagues, but within three years, she stepped down. Their CEO, Derek Jeter, had also just left the organization. As a group, we looked into possible causes of this, while also working on a solution to fix it. To us, there is a clear issue at the top of management, which is why we think it is best for the Marlins to completely change their structure. We created a new management tree, so everyone knows who is in charge. With this system in place, no one should feel undercut, and everyone will be on the same page.</p>
+    </section>
+    <section>
+      <h2><a href="Financial Report.pdf">3. Nike Organization Profile for Sport Finance</a></h2>
+      <p>For this project, I could choose any company. I decided on Nike and looked into their finances as well as their competition. I broke down their revenue charts to try and find out why they have been so successful. I then tired to find any areas where they could imporve, which was nto easy. I had to discuss some of Nike's biggest risks and threats to prove these points.</p>
+    </section>
+    <section>
+      <h2><a href="Observation .pdf">4. Organizational Observation for Strategic Management of Sport Organizations</a></h2>
+      <p>This was my most recent project. I was assigned to attend a sporting event and grade the organization on everything they do. We were instructed to use AI to come up with a checklist to bring to the game. I attended an HPU basketball game and assessed what they do well and what they do not do well. I then graded them in certain categories and came up with ways for them to improve the overall experience.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Mikey Youngman</p>
+    <p>myoungma@highpoint.edu</p>
+    <p>973-713-6524</p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and Time.</button>
     
-  <ul>
-    <li><strong>1. NIL Case Study for Strategic Management of Sport Organizations</strong> 
-        <p>For this case study, I discussed what NIL (Name, Image, and Likeness) is, and how to improve it. I looked at three main issues: Restrictions and Regulations, Equity, and Competitive Imbalance. Next, I came up with solutions to these issues. I had to research what exactly has gone wrong, and come up with realistic ways the NCAA may resolve these problems. While I do not intend on working in college athletics, this project was worthwhile because it helped me understand important issues in the industry. NIL will also have a huge impact on professional sports, as more and more athletes will stay in school longer due to the money they can make through NIL.</p>
-    </li>
-    
-    <li><strong>2. Miami Marlins Case Study for Organizational Behavior of Sport Organizations</strong>
-        <p>This was a very interesting project I worked on last year. Along with three classmates, we broke down what has gone wrong with the Miami Marlins’ management, and why this might be. In 2020, they hired the first female General Manager in the big four American sports leagues, but within three years, she stepped down. Their CEO, Derek Jeter, had also just left the organization. As a group, we looked into possible causes of this, while also working on a solution to fix it. To us, there is a clear issue at the top of management, which is why we think it is best for the Marlins to completely change their structure. We created a new management tree, so everyone knows who is in charge. With this system in place, no one should feel undercut, and everyone will be on the same page.</p>
-    </li>
-    
-    <li><strong>3. Nike Organization Profile for Sport Finance</strong>
-        <p>For this project, I could choose any company. I decided on Nike and looked into their finances as well as their competition. I broke down their revenue charts to try and find out why they have been so successful.</p>
-    </li>
-    
-    <li><strong>4. Organizational Observation for Strategic Management of Sport Organizations</strong>
-        <p>This was my most recent project. I was assigned to attend a sporting event and grade the organization on everything they do. We were instructed to use AI to come up with a checklist to bring to the game. I attended an HPU basketball game and assessed what they do well and what they do not do well. I then graded them in certain categories and came up with ways for them to improve the overall experience.</p>
-    </li>
-</ul>
-
-    <footer>
-        <p>&copy; 2024 Mikey Youngman</p>
-        <p>myoungma@highpoint.edu</p>
-        <p>973-713-6524</p>
-        <button type="button" onclick="toggleColors()">Toggle Color Palette</button>
-        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and Time.</button>
-        
-        <p id="demo"></p>
-    </footer>
-
-    <script>
-        function toggleColors() {
-            document.body.classList.toggle('no-colors');
-        }
-    </script>
-</body>
+    <p id="demo"></p>
+</footer>
+  <script src="script.js"></script>  
+</body>  
 </html>
