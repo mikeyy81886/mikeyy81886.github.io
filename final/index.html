@@ -1,134 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-    <title>My Travel Site</title>
-    <style>
-        /* Define the color palette */
-        :root {
-            --color-1: #F79256; /* Orange */
-            --color-2: #FBD1A2; /* Light peach */
-            --color-3: #7DCFB6; /* Teal */
-            --color-4: #00B2CA; /* Cyan */
-            --color-5: #1D4E89; /* Dark blue */
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mikey's Travel Site</title>
+<style>
+  /* Global Styles */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
-        /* Global reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
 
-        /* Main layout */
-        html, body {
-            height: 100%; /* Ensure the body takes the full height of the viewport */
-            font-family: Arial, sans-serif;
-        }
+  header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+  }
 
-        /* Body background and text color */
-        body {
-            background-color: var(--color-2); /* Light peachy color */
-            color: var(--color-5); /* Dark blue text */
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between; /* Ensure space between header/content and footer */
-        }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
 
-        /* Header */
-        header {
-            background-color: var(--color-1); /* Orange background */
-            padding: 20px;
-            text-align: center;
-        }
+  nav li {
+    margin: 0 10px;
+  }
 
-        header h1 {
-            color: var(--color-5); /* Dark blue for main heading */
-        }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
 
-        header h2, header h3 {
-            color: var(--color-4); /* Cyan for subheadings */
-        }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+  }
 
-        header h4 p {
-            color: var(--color-3); /* Light teal color for paragraph */
-        }
+  section {
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+  }
 
-        /* Style for the links */
-        a {
-            color: var(--color-4); /* Cyan for links */
-            text-decoration: none;
-        }
-        
+  .picture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+  }
 
-        /* Style for the unordered list */
-        ul {
-            list-style-type: none;
-            padding: 0;
-            text-align: center;
-        }
+  .picture {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
 
-        ul li {
-            font-size: 1.2em;
-            margin: 10px 0;
-            color: var(--color-5); /* Dark blue for list items */
-        }
+  .hero-content {
+    text-align: center;
+    padding: 1em;
+  }
 
-        /* Footer */
-        footer {
-            background-color: var(--color-1); /* Orange footer */
-            text-align: center;
-            padding: 10px;
-            color: white;
-            margin-top: auto; /* Push footer to the bottom of the page */
-        }
+  .hero-content p {
+    font-size: 2em; /* Increased font size */
+    color: #e07a5f; /* Orange color */
+    margin-bottom: 20px;
+    font-weight: bold; /* Make it bold */
+  }
 
-        /* Responsive image */
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-    </style>
-    <style>.image-container {
-        display: flex;              /* Use flexbox to align items in a row */
-        justify-content: center;    /* Optionally center the images horizontally */
-        gap: 20px;                  /* Add some space between images */
-    }</style>
+  button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
 
+  button:hover {
+    background-color: #2ecc71;
+  }
+
+  .title {
+    font-size: 3em;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Brush Script MT', cursive;
+  }
+
+  footer {
+    background-color: #3498db;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+  }
+</style>
 </head>
 <body>
-    <header>
-        <h1>My Travel Page</h1>
-        <h2>
-            <a href="index.html">Home  -</a>
-            <a href="places.html">Where I have been  -</a>
-            <a href="future.html">Travel Bucket List</a>
-        </h2>
-    
-    </header>
-
-    <main>
-        <div class="image-container">
-            <img src="Jamaica.jpg" width="333" height="333" alt="Jamaica">
-            <img src="Italy.jpg" width="333" height="333" alt="Italy">
-            <img src="CostaRica.jpg" width="333" height="333" alt="Costa Rica">
-            <img src="France.jpg" width="333" height="333" alt="France">
-        </div>
-    </main>
-
-
-    <footer>
-        <p>&copy; 2024 My Travel Site</p>
-        <ul>
-            <li><strong>myoungma@highpoint.edu</strong></li>
-            <li><strong>973-713-6524</strong></li>
-            <a href="contact.html">Contact Me</a>
-        </ul>
-    </footer>
+<header>
+  <h1 class="title">Mikey's Travel Site</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="places.html">Where I've Been</a></li>
+      <li><a href="future.html">Travel Bucket List</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="picture-grid">
+    <img class="picture" src="Jamaica.jpg" alt="Picture 1">
+    <img class="picture" src="France.jpg" alt="Picture 2">
+    <img class="picture" src="CostaRica.jpg" alt="Picture 3">
+    <img class="picture" src="Italy.jpg" alt="Picture 4">
+    <img class="picture" src="DR.jpg" alt="Picture 5">
+    <img class="picture" src="NYC.jpg" alt="Picture 6">
+  </section>
+  <section class="hero-content">
+    <p>Travel the World With Me</p>
+  </section>
+</main>
+<footer>
+  <p>© 2024 Mikey Youngman</p>
+  <p>myoungma@highpoint.edu</p>
+  <p>973-713-6524</p>
+  <li><a href="contact.html">Contact me!</a></li>
+  <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and Time.</button>
+  <p id="demo"></p>
+</footer>
 </body>
+</html>
