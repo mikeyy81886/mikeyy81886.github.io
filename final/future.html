@@ -1,125 +1,189 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-    <title>My Travel Site</title>
-    <style>
-        /* Define the color palette */
-        :root {
-            --color-1: #F79256; /* Orange */
-            --color-2: #FBD1A2; /* Light peach */
-            --color-3: #7DCFB6; /* Teal */
-            --color-4: #00B2CA; /* Cyan */
-            --color-5: #1D4E89; /* Dark blue */
-        }
-
-        /* Global reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Main layout */
-        html, body {
-            height: 100%; /* Ensure the body takes the full height of the viewport */
-            font-family: Arial, sans-serif;
-        }
-
-        /* Body background and text color */
-        body {
-            background-color: var(--color-2); /* Light peachy color */
-            color: var(--color-5); /* Dark blue text */
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between; /* Ensure space between header/content and footer */
-        }
-
-        /* Header */
-        header {
-            background-color: var(--color-1); /* Orange background */
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            color: var(--color-5); /* Dark blue for main heading */
-        }
-
-        header h2, header h3 {
-            color: var(--color-4); /* Cyan for subheadings */
-        }
-
-        header h4 p {
-            color: var(--color-3); /* Light teal color for paragraph */
-        }
-
-        /* Style for the links */
-        a {
-            color: var(--color-4); /* Cyan for links */
-            text-decoration: none;
-        }
-
-        
-
-        /* Style for the unordered list */
-        ul {
-            list-style-type: none;
-            padding: 0;
-            text-align: center;
-        }
-
-        ul li {
-            font-size: 1.2em;
-            margin: 10px 0;
-            color: var(--color-5); /* Dark blue for list items */
-        }
-
-        /* Footer */
-        footer {
-            background-color: var(--color-1); /* Orange footer */
-            text-align: center;
-            padding: 10px;
-            color: white;
-            margin-top: auto; /* Push footer to the bottom of the page */
-        }
-
-        /* Responsive image */
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>My Travel Page</h1>
-        <h2>
-            <a href="index.html">Home  -</a>
-            <a href="places.html">Where I have been  -</a>
-            <a href="future.html">Travel Bucket List</a>
-        </h2>
-    
-    </header>
-
-
-<main>
-    <p>Where I'm going next</p>
-</main>
-
-
-    <footer>
-        <p>&copy; 2024 My Travel Site</p>
-        <ul>
-            <li><strong>myoungma@highpoint.edu</strong></li>
-            <li><strong>973-713-6524</strong></li>
-            <a href="contact.html">Contact Me</a>
-        </ul>
-    </footer>
-</body>
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Mikey's Travel Site</title>  
+  <style>  
+   /* Global Styles */  
+   * {  
+    box-sizing: border-box;  
+    margin: 0;  
+    padding: 0;  
+   }  
+  
+   body {  
+    font-family: Arial, sans-serif;  
+    line-height: 1.6;  
+    color: #333;  
+    background-color: #f9f9f9;  
+   }  
+  
+   header {  
+    background-color: #3498db;  
+    color: #fff;  
+    padding: 1em;  
+    text-align: center;  
+   }  
+  
+   nav ul {  
+    list-style: none;  
+    margin: 0;  
+    padding: 0;  
+    display: flex;  
+    justify-content: center;  
+   }  
+  
+   nav li {  
+    margin: 0 10px;  
+   }  
+  
+   nav a {  
+    color: #fff;  
+    text-decoration: none;  
+   }  
+  
+   main {  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+    padding: 2em;  
+   }  
+  
+   section {  
+    background-color: #fff;  
+    padding: 1em;  
+    margin-bottom: 20px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    width: 80%;  
+    max-width: 800px;  
+   }  
+  
+   .picture-grid {  
+    display: grid;  
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  
+    grid-gap: 10px;  
+   }  
+  
+   .picture {  
+    width: 100%;  
+    height: auto;  
+    object-fit: cover;  
+    border-radius: 10px;  
+    margin-bottom: 10px;  
+   }  
+  
+   .hero-content {  
+    text-align: center;  
+    padding: 1em;  
+   }  
+  
+   .hero-content p {  
+    font-size: 2em;  
+    color: #e07a5f;  
+    margin-bottom: 20px;  
+    font-weight: bold;  
+   }  
+  
+   button {  
+    background-color: #3498db;  
+    color: #fff;  
+    border: none;  
+    padding: 10px 20px;  
+    font-size: 16px;  
+    cursor: pointer;  
+   }  
+  
+   button:hover {  
+    background-color: #2ecc71;  
+   }  
+  
+   .title {  
+    font-size: 3em;  
+    color: #fff;  
+    text-align: center;  
+    margin-bottom: 20px;  
+    font-family: 'Brush Script MT', cursive;  
+   }  
+  
+   footer {  
+    background-color: #3498db;  
+    color: #fff;  
+    padding: 1em;  
+    text-align: center;  
+   }  
+  
+   .country-list {  
+    list-style: none;  
+    padding: 0;  
+    margin: 0;  
+   }  
+  
+   .country-list li {  
+    margin-bottom: 30px;  
+    padding: 20px;  
+    border-bottom: 1px solid #ccc;  
+   }  
+  
+   .country-list li:last-child {  
+    border-bottom: none;  
+   }  
+  
+   .country-image {  
+    max-width: 100%;  
+    height: auto;  
+    object-fit: contain;  
+    border-radius: 10px;  
+    margin-bottom: 10px;  
+   }  
+  </style>  
+</head>  
+<body>  
+  <header>  
+   <h1 class="title">Mikey's Travel Site</h1>  
+   <nav>  
+    <ul>  
+      <li><a href="index.html">Home</a></li>  
+      <li><a href="places.html">Where I've Been</a></li>  
+      <li><a href="future.html">Travel Bucket List</a></li>  
+      <li><a href="contact.html">Contact Me</a></li>  
+    </ul>  
+   </nav>  
+  </header>  
+  <main>  
+   <section>  
+    <h2>Where I Want to Go Next!!!</h2>  
+    <ul class="country-list">  
+      <li>  
+       <h3>Greece</h3>  
+       <img class="country-image" src="Greece.jpeg" alt="Greece">  
+       <p>Greece is at the top of my bucket list. Greece has a great balence of culture, food, and beaches. Their is also plent to do in multiple cities throughout the country. This would be one of my top choices of places I could go to next.</p>  
+      </li>  
+      <li>  
+       <h3>Indonesia</h3>  
+       <img class="country-image" src="Indo.jpeg" alt="Bali">  
+       <p>Indonesia is another place I really want to go to, specificaly Bali. It seems like a perfect place. Beautiful beaches, great weather, and very good food. The only downside is how long the flight would be.</p>  
+      </li>  
+      <li>  
+       <h3>Columbia</h3>  
+       <img class="country-image" src="Cartanega.jpeg" alt="Columbia">  
+       <p>Next on my list is Columbia. I am putting this here, because this is the next place I am going. I have a trip planned in a month and it will be my first time in South America. I am going to Cartanega a city on the cost. It looks like a very nice city with great culture, beaches, and food. I did not know about this place before, but am very excited about this trip. </p>  
+      </li>  
+      <li>  
+       <h3>Japan</h3>  
+       <img class="country-image" src="Japan.jpeg" alt="Japan">  
+       <p>I have never been to Asia, but really would like to go to Japan. Tokoyo seems like a fun city and I would love the opportunity to go there. I think I would really enjoy the food.  </p>  
+      </li>  
+    </ul>  
+   </section>  
+  </main>  
+  <footer>  
+   <p>&copy; 2024 Mikey Youngman</p>  
+   <p>myoungma@highpoint.edu</p>  
+   <p>973-713-6524</p>  
+   <li><a href="contact.html">Contact me!</a></li>  
+   <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and Time.</button>  
+   <p id="demo"></p>  
+  </footer>  
+</body>  
+</html>
