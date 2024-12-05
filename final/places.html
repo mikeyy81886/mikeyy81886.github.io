@@ -1,158 +1,204 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-    <title>My Travel Site</title>
-    <style>
-        /* Define the color palette */
-        :root {
-            --color-1: #F79256; /* Orange */
-            --color-2: #FBD1A2; /* Light peach */
-            --color-3: #7DCFB6; /* Teal */
-            --color-4: #00B2CA; /* Cyan */
-            --color-5: #1D4E89; /* Dark blue */
-        }
-
-        /* Global reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Main layout */
-        html, body {
-            height: 100%; /* Ensure the body takes the full height of the viewport */
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-        }
-
-        /* Body background and text color */
-        body {
-            background-color: var(--color-2); /* Light peachy color */
-            color: var(--color-5); /* Dark blue text */
-            flex-grow: 1; /* Ensure the body fills the available space */
-            margin: 0; /* Remove any default margin */
-        }
-
-        /* Header */
-        header {
-            background-color: var(--color-1); /* Orange background */
-            padding: 20px;
-            text-align: center;
-            width: 100%; /* Make sure header covers the full width */
-            box-sizing: border-box; /* Include padding in the width calculation */
-        }
-
-        header h1 {
-            color: var(--color-5); /* Dark blue for main heading */
-            margin-bottom: 10px; /* Add space below the heading */
-        }
-
-        header h2, header h3 {
-            color: var(--color-4); /* Cyan for subheadings */
-            margin-top: 5px; /* Add space above subheadings */
-        }
-
-        header h4 p {
-            color: var(--color-3); /* Light teal color for paragraph */
-            margin-top: 10px; /* Add space above paragraph */
-        }
-
-        /* Style for the links */
-        a {
-            color: var(--color-4); /* Cyan for links */
-            text-decoration: none;
-        }
-
-        /* Style for the unordered list */
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin-top: 20px; /* Add space at the top of the list */
-            text-align: left; /* Left-align the entire list */
-        }
-
-        ul li {
-            font-size: 1.2em;
-            margin: 15px 0; /* Increase margin between list items */
-            color: var(--color-5); /* Dark blue for list items */
-            font-weight: bold; /* Bold the country names */
-        }
-
-        p {
-            margin-left: 20px; /* Indent the paragraph under each list item */
-            margin-top: 5px;
-            color: var(--color-5);
-        }
-
-        /* Footer */
-        footer {
-            background-color: var(--color-1); /* Orange footer */
-            text-align: center; /* Ensure text is centered */
-            padding: 20px;
-            color: white;
-            width: 100%; /* Make sure footer covers the full width */
-            box-sizing: border-box; /* Include padding in the width calculation */
-            margin-top: auto; /* Push the footer to the bottom */
-        }
-
-        footer ul {
-            display: inline-block; /* Ensure the contact list is centered */
-            text-align: center; /* Center the items inside the list */
-            margin-top: 20px;
-        }
-
-        footer ul li {
-            margin: 10px 0; /* Add space between contact items */
-        }
-
-        footer a {
-            display: block;
-            margin-top: 10px; /* Add space above the link */
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>My Travel Page</h1>
-        <h2>
-            <a href="index.html">Home  -</a>
-            <a href="places.html">Where I have been  -</a>
-            <a href="future.html">Travel Bucket List</a>
-        </h2>
-    </header>
-
-    <main>
-        <ul>
-            <li>Canada:</li>
-            <p>I have visited Canada twice, and have stayed in multiple cities including Toronto, Niagara, and Montreal. All three cities where beautiful, but I did not experience the true Canadien weather, as both times I went it was during the summer. I went their to play hockey and it was an unforgettable experience. Overall I would give it a 7.2/10</p>
-            <li>Mexico:</li>
-            <p>I went to Mexico last year, visiting both Cancun and Mexico City. Two very different places, but I enjoyed both very much. Cancun was pretty and relaxing, while Meixco City gave me the chance to experience true Mexican Cultire. 6.8/10</p>
-            <li>Dominican Republic:</li>
-            <p>I went to Punta Cana when I was younger, and did not love it. It is a very nice island, but I found there was not a lot to do. The food however, was very good. It was a good trip, but not great. 6/10.</p>
-            <li>Costa Rica:</li>
-            <p>Costa Rica was one of the nicest islands I have been to. The mix of beaches and rain forests was unlike anywhere else I have been. The wildlife was also amazing as there where monkeys everywhere I looked. 8.8/10</p>
-            <li>Jamaica:</li>
-            <p>Jamaica is my favortie country. I have been there 13 times, and would go back again anytime. The weather is perfect, and they have the most beautiful beaches I have ever seen. The people are also amazing. 9.5/10</p>
-            <li>Italy:</li>
-            <p>I think I was too young to really appreciate Italy. Looking back I wish I was older so I could better understand the history and beuty of the country. I stayed in both Rome and Florence and ate some of the best food I ever have had. 9.5/10</p>
-            <li>France:</li>
-            <p>Similar to Italy, I was not older enough to truly enjoy France. Paris was very nice, and I think I would enjoy it a lot more if I went again today. 7.8/10</p>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 My Travel Site</p>
-        <ul>
-            <li><strong>myoungma@highpoint.edu</strong></li>
-            <li><strong>973-713-6524</strong></li>
-            <a href="contact.html">Contact Me</a>
-        </ul>
-    </footer>
-</body>
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Mikey's Travel Site</title>  
+  <style>  
+   /* Global Styles */  
+   * {  
+    box-sizing: border-box;  
+    margin: 0;  
+    padding: 0;  
+   }  
+  
+   body {  
+    font-family: Arial, sans-serif;  
+    line-height: 1.6;  
+    color: #333;  
+    background-color: #f9f9f9;  
+   }  
+  
+   header {  
+    background-color: #3498db;  
+    color: #fff;  
+    padding: 1em;  
+    text-align: center;  
+   }  
+  
+   nav ul {  
+    list-style: none;  
+    margin: 0;  
+    padding: 0;  
+    display: flex;  
+    justify-content: center;  
+   }  
+  
+   nav li {  
+    margin: 0 10px;  
+   }  
+  
+   nav a {  
+    color: #fff;  
+    text-decoration: none;  
+   }  
+  
+   main {  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+    padding: 2em;  
+   }  
+  
+   section {  
+    background-color: #fff;  
+    padding: 1em;  
+    margin-bottom: 20px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    width: 80%;  
+    max-width: 800px;  
+   }  
+  
+   .picture-grid {  
+    display: grid;  
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  
+    grid-gap: 10px;  
+   }  
+  
+   .picture {  
+    width: 100%;  
+    height: auto;  
+    object-fit: cover;  
+    border-radius: 10px;  
+    margin-bottom: 10px;  
+   }  
+  
+   .hero-content {  
+    text-align: center;  
+    padding: 1em;  
+   }  
+  
+   .hero-content p {  
+    font-size: 2em;  
+    color: #e07a5f;  
+    margin-bottom: 20px;  
+    font-weight: bold;  
+   }  
+  
+   button {  
+    background-color: #3498db;  
+    color: #fff;  
+    border: none;  
+    padding: 10px 20px;  
+    font-size: 16px;  
+    cursor: pointer;  
+   }  
+  
+   button:hover {  
+    background-color: #2ecc71;  
+   }  
+  
+   .title {  
+    font-size: 3em;  
+    color: #fff;  
+    text-align: center;  
+    margin-bottom: 20px;  
+    font-family: 'Brush Script MT', cursive;  
+   }  
+  
+   footer {  
+    background-color: #3498db;  
+    color: #fff;  
+    padding: 1em;  
+    text-align: center;  
+   }  
+  
+   .country-list {  
+    list-style: none;  
+    padding: 0;  
+    margin: 0;  
+   }  
+  
+   .country-list li {  
+    margin-bottom: 30px;  
+    padding: 20px;  
+    border-bottom: 1px solid #ccc;  
+   }  
+  
+   .country-list li:last-child {  
+    border-bottom: none;  
+   }  
+  
+   .country-image {  
+    max-width: 100%;  
+    height: auto;  
+    object-fit: contain;  
+    border-radius: 10px;  
+    margin-bottom: 10px;  
+   }  
+  </style>  
+</head>  
+<body>  
+  <header>  
+   <h1 class="title">Mikey's Travel Site</h1>  
+   <nav>  
+    <ul>  
+      <li><a href="index.html">Home</a></li>  
+      <li><a href="places.html">Where I've Been</a></li>  
+      <li><a href="future.html">Travel Bucket List</a></li>  
+      <li><a href="contact.html">Contact Me</a></li>  
+    </ul>  
+   </nav>  
+  </header>  
+  <main>  
+   <section>  
+    <h2>Places I've Been</h2>  
+    <ul class="country-list">  
+      <li>  
+       <h3>Canada</h3>  
+       <img class="country-image" src="TORONTO.jpeg" alt="Canada">  
+       <p>I have visited Canada twice, and have stayed in multiple cities including Toronto, Niagara, and Montreal. All three cities where beautiful, but I did not experience the true Canadien weather, as both times I went it was during the summer. I went their to play hockey and it was an unforgettable experience. Overall I would give it a 7.2/10</p>  
+      </li>  
+      <li>  
+       <h3>Mexico</h3>  
+       <img class="country-image" src="Cancun.jpeg" alt="Mexico">  
+       <p>I went to Mexico last year, visiting both Cancun and Mexico City. Two very different places, but I enjoyed both very much. Cancun was pretty and relaxing, while Meixco City gave me the chance to experience true Mexican Cultire. 6.8/10</p>  
+      </li>  
+      <li>  
+       <h3>Dominican Republic</h3>  
+       <img class="country-image" src="DRWIDE.jpeg" alt="Dominican Republic">  
+       <p>I went to Punta Cana when I was younger, and did not love it. It is a very nice island, but I found there was not a lot to do. The food however, was very good. It was a good trip, but not great. 6/10.</p>  
+      </li>  
+      <li>  
+       <h3>Costa Rica</h3>  
+       <img class="country-image" src="COSTARICAWIDE.jpeg" alt="Costa Rica">  
+       <p>Costa Rica was one of the nicest islands I have been to. The mix of beaches and rain forests was unlike anywhere else I have been. The wildlife was also amazing as there where monkeys everywhere I looked. 8.8/10</p>  
+      </li>  
+      <li>  
+       <h3>Jamaica</h3>  
+       <img class="country-image" src="MontegoBay.jpeg" alt="Jamaica">  
+       <p>Jamaica is my favortie country. I have been there 13 times, and would go back again anytime. I always stay in Montego Bay, but have also been to other cities such as Nigril. The weather is perfect, and they have the most beautiful beaches I have ever seen. The people are also amazing. 9.5/10</p>  
+      </li>  
+      <li>  
+       <h3>Italy</h3>  
+       <img class="country-image" src="ITALYWIDE.jpeg" alt="Italy">  
+       <p>I think I was too young to really appreciate Italy. Looking back I wish I was older so I could better understand the history and beuty of the country. I stayed in both Rome and Florence and ate some of the best food I ever have had. 9.5/10</p>  
+      </li>  
+      <li>  
+       <h3>France</h3>  
+       <img class="country-image" src="FRANCE.jpeg" alt="France">  
+       <p>Similar to Italy, I was not older enough to truly enjoy France. Paris was very nice, and I think I would enjoy it a lot more if I went again today. Once again the food was very good. 7.8/10</p>  
+      </li>  
+    </ul>  
+   </section>  
+  </main>  
+  <footer>  
+   <p>&copy; 2024 Mikey Youngman</p>  
+   <p>myoungma@highpoint.edu</p>  
+   <p>973-713-6524</p>  
+   <li><a href="contact.html">Contact me!</a></li>  
+   <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and Time.</button>  
+   <p id="demo"></p>  
+  </footer>  
+</body>  
 </html>
