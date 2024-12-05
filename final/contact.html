@@ -1,142 +1,219 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-    <title>My Travel Site</title>
-    <style>
-        /* Define the color palette */
-        :root {
-            --color-1: #F79256; /* Orange */
-            --color-2: #FBD1A2; /* Light peach */
-            --color-3: #7DCFB6; /* Teal */
-            --color-4: #00B2CA; /* Cyan */
-            --color-5: #1D4E89; /* Dark blue */
-        }
-
-        /* Global reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Main layout */
-        html, body {
-            height: 100%; /* Ensure the body takes the full height of the viewport */
-            font-family: Arial, sans-serif;
-        }
-
-        /* Body background and text color */
-        body {
-            background-color: var(--color-2); /* Light peachy color */
-            color: var(--color-5); /* Dark blue text */
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between; /* Ensure space between header/content and footer */
-        }
-
-        /* Header */
-        header {
-            background-color: var(--color-1); /* Orange background */
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            color: var(--color-5); /* Dark blue for main heading */
-        }
-
-        header h2, header h3 {
-            color: var(--color-4); /* Cyan for subheadings */
-        }
-
-        header h4 p {
-            color: var(--color-3); /* Light teal color for paragraph */
-        }
-
-        /* Style for the links */
-        a {
-            color: var(--color-4); /* Cyan for links */
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: var(--color-1); /* Orange when hovered */
-        }
-
-        /* Style for the unordered list */
-        ul {
-            list-style-type: none;
-            padding: 0;
-            text-align: center;
-        }
-
-        ul li {
-            font-size: 1.2em;
-            margin: 10px 0;
-            color: var(--color-5); /* Dark blue for list items */
-        }
-
-        /* Footer */
-        footer {
-            background-color: var(--color-1); /* Orange footer */
-            text-align: center;
-            padding: 10px;
-            color: white;
-            margin-top: auto; /* Push footer to the bottom of the page */
-        }
-
-        /* Responsive image */
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>My Travel Page</h1>
-            <a href="index.html">Home</a>
-        <h2>More about me and how to contact me</h2>
-    
-    </header>
-
-
-<main>
-    
-        <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value=""><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value=""><br><br>
-    <textarea id="w3review" name="w3review" rows="4" cols="50">Leave a message here</textarea>
-  <br>
-    <label for="cars">Choose age:</label>
-  <select id="age" name="age">
-    <option value="volvo"><18</option>
-    <option value="saab">18-25</option>
-    <option value="fiat">26-50</option>
-    <option value="audi">>50</option>
-  </select>
-  <br>
-  <br>
-  <input type="submit" value="Submit">
-</form> 
-
-</main>
-
-
-    <footer>
-        <p>&copy; 2024 My Travel Site</p>
-        <ul>
-            <li><strong>myoungma@highpoint.edu</strong></li>
-            <li><strong>973-713-6524</strong></li>
-            <a href="contact.html">Contact Me</a>
-        </ul>
-    </footer>
-</body>
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Mikey's Travel Site</title>  
+  <style>  
+   /* Global Styles */  
+   * {  
+    box-sizing: border-box;  
+    margin: 0;  
+    padding: 0;  
+   }  
+  
+   body {  
+    font-family: Arial, sans-serif;  
+    line-height: 1.6;  
+    color: #333;  
+    background-color: #f9f9f9;  
+   }  
+  
+   header {  
+    background-color: #3498db;  
+    color: #fff;  
+    padding: 1em;  
+    text-align: center;  
+   }  
+  
+   nav ul {  
+    list-style: none;  
+    margin: 0;  
+    padding: 0;  
+    display: flex;  
+    justify-content: center;  
+   }  
+  
+   nav li {  
+    margin: 0 10px;  
+   }  
+  
+   nav a {  
+    color: #fff;  
+    text-decoration: none;  
+   }  
+  
+   main {  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+    padding: 2em;  
+   }  
+  
+   section {  
+    background-color: #fff;  
+    padding: 1em;  
+    margin-bottom: 20px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    width: 80%;  
+    max-width: 800px;  
+   }  
+  
+   .picture-grid {  
+    display: grid;  
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  
+    grid-gap: 10px;  
+   }  
+  
+   .picture {  
+    width: 100%;  
+    height: auto;  
+    object-fit: cover;  
+    border-radius: 10px;  
+    margin-bottom: 10px;  
+   }  
+  
+   .hero-content {  
+    text-align: center;  
+    padding: 1em;  
+   }  
+  
+   .hero-content p {  
+    font-size: 2em; /* Increased font size */  
+    color: #e07a5f; /* Orange color */  
+    margin-bottom: 20px;  
+    font-weight: bold; /* Make it bold */  
+   }  
+  
+   button {  
+    background-color: #3498db;  
+    color: #fff;  
+    border: none;  
+    padding: 10px 20px;  
+    font-size: 16px;  
+    cursor: pointer;  
+   }  
+  
+   button:hover {  
+    background-color: #2ecc71;  
+   }  
+  
+   .title {  
+    font-size: 3em;  
+    color: #fff;  
+    text-align: center;  
+    margin-bottom: 20px;  
+    font-family: 'Brush Script MT', cursive;  
+   }  
+  
+   footer {  
+    background-color: #3498db;  
+    color: #fff;  
+    padding: 1em;  
+    text-align: center;  
+   }  
+  
+   form {  
+    width: 50%;  
+    margin: 40px auto;  
+    padding: 20px;  
+    border: 1px solid #ccc;  
+    border-radius: 10px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+   }  
+  
+   label {  
+    display: block;  
+    margin-bottom: 10px;  
+   }  
+  
+   input[type="text"], input[type="email"], input[type="tel"] {  
+    width: 100%;  
+    height: 40px;  
+    margin-bottom: 20px;  
+    padding: 10px;  
+    border: 1px solid #ccc;  
+   }  
+  
+   select {  
+    width: 100%;  
+    height: 40px;  
+    margin-bottom: 20px;  
+    padding: 10px;  
+    border: 1px solid #ccc;  
+   }  
+  
+   button[type="submit"] {  
+    width: 100%;  
+    height: 40px;  
+    background-color: #4CAF50;  
+    color: #fff;  
+    padding: 10px;  
+    border: none;  
+    border-radius: 10px;  
+    cursor: pointer;  
+   }  
+  
+   button[type="submit"]:hover {  
+    background-color: #3e8e41;  
+   }  
+  
+   #response {  
+    display: none;  
+    margin-top: 20px;  
+    padding: 10px;  
+    border: 1px solid #ccc;  
+    border-radius: 10px;  
+    background-color: #f9f9f9;  
+   }  
+  </style>  
+</head>  
+<body>  
+  <header>  
+   <h1 class="title">Mikey's Travel Site</h1>  
+   <nav>  
+    <ul>  
+      <li><a href="index.html">Home</a></li>  
+      <li><a href="places.html">Where I've Been</a></li>  
+      <li><a href="future.html">Travel Bucket List</a></li>  
+      <li><a href="contact.html">Contact Me</a></li>  
+    </ul>  
+   </nav>  
+  </header>  
+  <main>  
+   <section>  
+    <h2>Contact Me</h2>  
+    <form id="contact-form">  
+      <label for="first-name">First Name:</label>  
+      <input type="text" id="first-name" name="first-name" required>  
+  
+      <label for="last-name">Last Name:</label>  
+      <input type="text" id="last-name" name="last-name" required>  
+  
+      <label for="email">Email:</label>  
+      <input type="email" id="email" name="email" required>  
+  
+      <label for="phone-number">Phone Number:</label>  
+      <input type="tel" id="phone-number" name="phone-number" required>  
+  
+      <label for="question">How many countries have you been to?</label>  
+      <select id="question" name="question" required>  
+       <option value="">Select an option</option>  
+       <option value="1-2">1-2</option>  
+       <option value="3-5">3-5</option>  
+       <option value="6-10">6-10</option>  
+       <option value="more-than-10">More than 10</option>  
+      </select>  
+  
+      <button type="submit">Submit</button>  
+  
+      <div id="response"></div>  
+    </form>  
+   </section>  
+  </main>  
+  <footer>  
+   <p>&copy; 2024 Mikey Youngman</p>  
+   <p>myoungma@highpoint.edu</p>  
+   <p>973-713-6524</p>  
+   <li><a href="contact.html    responseDiv.style.display = 'block';  
+    responseDiv.innerHTML = `Thank you, ${firstName} ${lastName}! Your response has been recorded
